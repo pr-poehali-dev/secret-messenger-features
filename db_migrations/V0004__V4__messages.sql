@@ -1,0 +1,1 @@
+CREATE TABLE messages (id SERIAL PRIMARY KEY, group_id INTEGER REFERENCES groups_chat(id), user_id INTEGER REFERENCES users(id), text TEXT NOT NULL, created_at TIMESTAMP DEFAULT NOW());

@@ -1,0 +1,1 @@
+CREATE TABLE group_members (group_id INTEGER REFERENCES groups_chat(id), user_id INTEGER REFERENCES users(id), joined_at TIMESTAMP DEFAULT NOW(), PRIMARY KEY (group_id, user_id));
